@@ -1,0 +1,96 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "react-native/react-native": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard",
+        "plugin:react-hooks/recommended",
+        "plugin:prettier/recommended",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-native",
+        "prettier"
+    ],
+    "rules": {
+        "react-native/no-unused-styles": 2,
+        "react-native/split-platform-components": 2,
+        "react-native/no-inline-styles": 2,
+        "react-native/no-raw-text": 2,
+        "react-native/sort-styles": [
+            "error",
+            "asc",
+            {
+                "ignoreClassNames": false,
+                "ignoreStyleProperties": false
+            }
+        ],
+        "react/no-unknown-property": [2, { "ignore": ["class", "for", "inputmode"] }],
+        "react/prop-types": 0,
+        "react/no-unescaped-entities": 0,
+        "no-unused-vars": 1,
+        "camelcase": 0,
+        "no-prototype-builtins": 0,
+        "comma-dangle": ["error", {
+            "arrays": "never",
+            "objects": "never",
+            "imports": "never",
+            "exports": "never",
+            "functions": "never"
+        }],
+        "prettier/prettier": [
+            "warn",
+            {
+                "printWidth": 100,
+                "semi": false,
+                "jsxSingleQuote": true,
+                "singleQuote": true,
+                "useTabs": false,
+                "tabWidth": 2,
+                "jsxBracketSameLine": false,
+                "parser": "flow",
+                "endOfLine": "auto",
+                "trailingComma": "none"
+            }
+        ],
+        "no-alert": "error",
+        "react/prefer-stateless-function": [
+            2,
+            {
+                "ignorePureComponents": true
+            }
+        ],
+        "react/forbid-prop-types": [
+            0
+        ],
+        "react/no-multi-comp": [
+            0
+        ],
+        "require-jsdoc": [
+            "warn",
+            {
+                "require": {
+                    "FunctionDeclaration": true,
+                    "MethodDefinition": true,
+                    "ClassDeclaration": true
+                }
+            }
+        ],
+        "strict": [
+            "error",
+            "global"
+        ],
+        "react/destructuring-assignment": 2
+    }
+}
